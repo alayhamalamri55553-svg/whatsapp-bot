@@ -1,7 +1,7 @@
 import makeWASocket, { useMultiFileAuthState, DisconnectReason } from '@whiskeysockets/baileys';
 import pino from 'pino';
 import { createServer } from 'http';
-
+console.log('Bot starting...');
 const server = createServer((req, res) => {
   res.writeHead(200);
   res.end('WhatsApp Bot Running!');
