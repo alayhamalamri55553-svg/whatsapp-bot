@@ -13,7 +13,7 @@ async function startBot() {
   
   const sock = makeWASocket({
     auth: state,
-    logger: pino({ level: 'debug' }),
+    logger: pino({ level: 'silent' }),
   });
 
   sock.ev.on('creds.update', saveCreds);
